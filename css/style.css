@@ -10,7 +10,6 @@ body {
   a,
   button {
     transition: all 0.3s ease-in-out;
-    outline: none !important;
   }
   
   a:hover {
@@ -756,6 +755,7 @@ body {
   
   .portfolio-thumb {
     margin-bottom: 24px;
+    min-width: 100%;
   }
   
   .portfolio-row {
@@ -838,6 +838,26 @@ body {
   
   .bg-presentation {
     background-image: url("../img/image-de-presentation-min.jpg");
+  }
+
+  form {
+    padding: 5px;
+    border: 1px solid lightgrey;
+  }
+
+  legend {
+    padding-left: 2rem;
+  }
+
+  .formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .row {
+    margin: 0 auto;
+    text-align: center;
   }
   
   @media (max-width: 1024px) {
@@ -991,6 +1011,7 @@ body {
     .bloc {
       padding-left: 0;
       padding-right: 0;
+      text-align: center;
     }
     .bloc-xxl,
     .bloc-xl,
@@ -1025,9 +1046,7 @@ body {
     .voffset-lg {
       margin-top: 30px;
     }
-    form {
-      padding: 5px;
-    }
+    
     .close-lightbox {
       display: inline-block;
     }
