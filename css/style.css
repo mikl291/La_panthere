@@ -45,7 +45,6 @@ body {
   .bloc .container {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 3rem;
   }
   
   .bloc-lg {
@@ -705,7 +704,7 @@ body {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-    width: 70%!important;
+    
   }
   
   .social {
