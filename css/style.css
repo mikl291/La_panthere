@@ -45,10 +45,11 @@ body {
   .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 3rem;
   }
   
   .bloc-lg {
-    padding: 100px 50px;
+    padding: 20px 0px;
   }
   
   .bloc-md {
@@ -91,10 +92,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-  }
-  
-  .texture-paper::before {
-    background: url("../img/background/agence-la-panthere.jpg");
   }
   
   .b-parallax {
@@ -304,7 +301,8 @@ body {
   }
   
   .navbar-brand img {
-    max-height: 200px;
+    min-width: 15rem;
+    max-width: 25rem;
     margin: 0 5px 0 0;
     display: inline;
   }
@@ -516,7 +514,6 @@ body {
   .form-group {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
     margin: 20px;
   }
   
@@ -708,6 +705,7 @@ body {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    width: 70%!important;
   }
   
   .social {
@@ -768,8 +766,8 @@ body {
   }
   
   .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    background-color: rgba(165, 147, 99, 2);
+    padding: 40px;
   }
   
   .bold-link {
@@ -781,11 +779,9 @@ body {
     background-color: #ffffff;
   }
   
-  .bgc-dark-slate-blue {
-    background-color: #364577;
-  }
   
-  .bgc-atomic-tangerine {
+  .bgc-atomic-tangerine,
+  .bgc-dark-slate-blue {
     background-color: #f3976c;
   }
   
@@ -796,11 +792,16 @@ body {
   .btn-atomic-tangerine {
     background: #f3976c;
     color: #ffffff !important;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
   
   .btn-atomic-tangerine:hover {
     background: #c27956 !important;
     color: #ffffff !important;
+    
   }
   
   .ltc-white {
@@ -825,24 +826,25 @@ body {
   }
   
   .bg-dots-bg {
-    background-image: url("../img/dots-bg.png");
+    background-image: url("../img/background/dots-bg.png");
   }
   
   .bg-lines-h2-bg {
-    background-image: url("../img/lines-h2-bg.png");
+    background-image: url("../img/background/lines-h2-bg.png");
   }
   
   .bg-banniere {
-    background-image: url("../img/agence-la-panthere-min.jpg");
-  }
+    background: url("../img/background/agence-la-panthere.jpg");
+ }
   
   .bg-presentation {
-    background-image: url("../img/image-de-presentation-min.jpg");
+    background-image: url("../img/background/image-de-presentation.png");
   }
 
   form {
     padding: 5px;
     border: 1px solid lightgrey;
+    border-radius: 25px;
   }
 
   legend {
