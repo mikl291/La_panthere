@@ -671,7 +671,9 @@ body {
     font-weight: 400;
     color: #575757;
   }
-  
+  label {
+    font-weight: 900;
+  }
   .container {
     max-width: 100%;
   }
@@ -696,6 +698,10 @@ body {
   
   p {
     font-size: 11px;
+    color: #000;
+  }
+  .contact {
+    font-weight: 900;
   }
   
   .tight-width-whitespace {
@@ -854,12 +860,13 @@ body {
 
   form {
     padding: 5px;
-    border: 1px solid lightgrey;
+    border: 1px solid #f3976c;
     border-radius: 25px;
   }
 
   legend {
     padding-left: 2rem;
+    border-bottom: 1px solid #f3976c;
   }
 
   .formulaire {
