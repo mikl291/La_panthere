@@ -272,7 +272,7 @@ body {
   
   #bloc-1-hero h1 {
     font-size: 32px;
-    background-color: #f3976c;
+    background-color: #ffffff;
     border-radius: 2rem;
     width: 60%;
     margin: 0 auto;
@@ -428,7 +428,7 @@ body {
   }
 
   .text{
-    background-color: #f3976c!important;
+    background-color: #ffffff!important;
     width: 55%;
     border-radius: 2rem;
     margin: 0 auto;
@@ -567,7 +567,7 @@ body {
   }
   
   a[data-lightbox]:hover img {
-    opacity: 0.6;
+    opacity: 1;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
   }
@@ -629,20 +629,20 @@ body {
     position: absolute;
     top: 45%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.6;
   }
   
   .next-lightbox {
     padding: 6px 8px 1px 13px;
     right: 15px;
-    top: 398px;
+    top: 50%;
     color: #fff!important;
   }
   
   .prev-lightbox {
     padding: 6px 13px 1px 10px;
     left: 15px;
-    top: 398px;
+    top: 50%;
     color: #fff!important;
   }
   
@@ -709,19 +709,12 @@ body {
     margin: auto auto auto auto;
   }
   
-  .h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-  }
-  
-  .cta-hero {
+  #cta-hero {
     margin-top: 22px;
-    color: #ffffff !important;
+    color: #000000;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-    
   }
   
   .social {
@@ -808,11 +801,12 @@ body {
   }
   
   .btn-atomic-tangerine {
-    background: #f3976c;
-    color: #000 !important;
+    background: #ffffff;
+    color: black;
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    font-weight: 700;
   }
   
   .btn-atomic-tangerine:hover {
@@ -902,13 +896,13 @@ body {
     }
   }
   
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
       background-attachment: scroll;
     }
   }
   
-  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  @media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
       background-attachment: scroll;
     }
@@ -926,10 +920,7 @@ body {
       overflow-x: hidden;
       position: relative;
     }
-    .bloc {
-      padding-left: constant(safe-area-inset-left);
-      padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
       display: block;
@@ -938,9 +929,7 @@ body {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
       padding: 0 20px;
-      padding-left: constant(safe-area-inset-left);
-      padding-right: constant(safe-area-inset-right);
-    }
+      }
   }
   
   @media (max-width: 767px) {
